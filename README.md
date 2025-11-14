@@ -149,10 +149,24 @@ function latLonToVector3(lat, lon, r = radius + 1.5) {
 
 ```
 
-Quinto se declará un array de pájaros que están migrando 
+Quinto se declará un array de pájaros que están migrando ,los colores de los pájaros y la función para establecer el color de los pájaros según la leyenda
 
 ```javascript
 const birds = [];
+// --- MAPA DE COLORES POR ESPECIE (NUEVO) ---
+const SPECIES_COLOR_MAP = new Map([
+  ["Warbler", 0x00ff00], // Verde brillante
+  ["Hawk", 0xff0000], // Rojo
+  ["Crane", 0x0000ff], // Azul
+  ["Eagle", 0xffff00], // Amarillo
+  ["Owl", 0x800080], // Púrpura
+  ["Pigeon", 0x00ffff], // Cian
+]);
+
+function getSpeciesColor(species) {
+  return SPECIES_COLOR_MAP.get(species) || 0xffffff;
+}
+
 ```
 
 Sexto se declará la función para crear los arcos de las migraciones
@@ -199,8 +213,8 @@ function createMigrationArcs(migrationData) {
     .sort((a, b) => b.count - a.count)
     .slice(0, 30);
 
-  const arcColor = new THREE.Color(0xffffff);
-
+ 
+  const arcColor = getSpeciesColor(route.species);
   sortedRoutes.forEach((route, index) => {
     const intensity = Math.min(route.count / 20, 1);
     const lineWidth = 0.5 + intensity * 2;
