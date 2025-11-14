@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Globo con rutas de aves</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+      }
+      #canvas-container {
+        flex: 1;
+      }
+      #legend {
+        width: 300px;
+        background: #111;
+        color: white;
+        padding: 10px;
+        font-family: sans-serif;
+        overflow-y: auto;
+      }
+      #legend h2 {
+        font-size: 16px;
+        margin-top: 0;
+      }
+      .bird {
+        display: flex;
+        align-items: center;
+        margin: 4px 0;
+      }
+      .color-box {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="canvas-container"></div>
+    <div id="legend">
+      <h2>Migración de aves</h2>
+      <div id="birds-list"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
