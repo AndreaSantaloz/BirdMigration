@@ -393,17 +393,9 @@ async function loadMigrationData() {
 
     console.log(`Datos procesados para arcos: ${processed} rutas`);
 
-    if (migrationData.length === 0) {
-      console.log("Creando datos de ejemplo para arcos...");
-      createExampleArcs();
-    } else {
-      createMigrationArcs(migrationData);
-    }
-  } catch (error) {
-    console.error("Error cargando datos reales:", error);
-    console.log("Creando datos de ejemplo para arcos...");
+  
     createExampleArcs();
-  }
+  
 }
 ```
 Por último,se declará las funciones init y animate y se ejecutan las funciones init,animate y loadMigrationData donde el primero aquí el orbit control,la segunda función hace que el planeta rote y llama a la función animteBirds para la animación y la tercer función carga los datos.
