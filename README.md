@@ -17,8 +17,7 @@ La comprensión y protección de las aves migratorias requiere, por tanto, un en
 
 ## ¿De qué se trata la práctica?
 
-En esta práctica se desarrollará una **visualización de los datos de migración de aves**, con el objetivo de representar gráficamente sus desplazamientos y patrones de movimiento a lo largo del tiempo.
-
+El código crea una Tierra 3D giratoria con líneas de latitud y longitud. Luego, lee datos de rutas de migración desde un archivo CSV y las visualiza como arcos curvos sobre la superficie del planeta. Además, añade pequeños objetos (llamados "pájaros") que se mueven a lo largo de estos arcos, simulando el movimiento migratorio.
 ## ¿Qué necesitamos para el proyecto?
 
 Se utilizará un **dataset de migración de aves de Estados Unidos**, ya que actualmente existe una disponibilidad limitada de datos locales sobre aves migratorias.
