@@ -20,7 +20,7 @@ La comprensión y protección de las aves migratorias requiere, por tanto, un en
 El código crea una Tierra 3D giratoria con líneas de latitud y longitud. Luego, lee datos de rutas de migración desde un archivo CSV y las visualiza como arcos curvos sobre la superficie del planeta. Además, añade pequeños objetos (llamados "pájaros") que se mueven a lo largo de estos arcos, simulando el movimiento migratorio.
 ## ¿Qué necesitamos para el proyecto?
 
-Se utilizará un **dataset de migración de aves de Estados Unidos**, ya que actualmente existe una disponibilidad limitada de datos locales sobre aves migratorias.
+Se utilizará un **dataset de migración de aves mundial** de tipo sintetico, ya que actualmente existe una disponibilidad limitada de datos locales sobre aves migratorias.
 Para ello, se ha accedido a la plataforma **Kaggle**, donde se seleccionó el siguiente conjunto de datos:
 👉 [Aves migratorias](https://www.kaggle.com/datasets/sahirmaharajj/bird-migration-dataset-data-visualization-eda?resource=download).
 
