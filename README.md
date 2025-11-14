@@ -428,6 +428,8 @@ loadMigrationData();
 
 https://github.com/user-attachments/assets/665661f1-2d05-4935-a0b1-3c98042473a1
 
+<br>
+Un ejemplo de que los datos sintéticos no son tan buenos
 
 ## Contacto
 
