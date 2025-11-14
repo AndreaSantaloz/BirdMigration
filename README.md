@@ -426,7 +426,10 @@ loadMigrationData();
 ## Demostración de la visualización
 
 
-https://github.com/user-attachments/assets/665661f1-2d05-4935-a0b1-3c98042473a1
+
+https://github.com/user-attachments/assets/9b2657b7-3208-4c4d-9c3e-649e132f5097
+
+
 
 <br>
 Un ejemplo de que los datos sintéticos no son tan buenos
