@@ -31,7 +31,9 @@ También será necesario crear una cuenta en **CodeSandbox** y desarrollar el pr
 El proyecto  contará con controles interactivos para que pueda moverse usando el ratón pero su mayor función es  en ofrecer una **visualización automatizada de los datos de la migración de aves**.
 
 ## ¿Cómo se va a desarrollar?
-
+:warning: **Advertencia:** Dependiendo de donde ponga los archivos tendrán unas rutas u otras
+<br>
+<br>
 En esta sección se explicará el **proceso de desarrollo de la práctica**, incluyendo la carga de datos, el procesamiento de la información y la creación de la visualización con Three.js.
 
 Como todo proyecto de Three.js importamos las librerias necesarias que son las siguientes:
